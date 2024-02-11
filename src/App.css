@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-snap-type: y mandatory ;
+}
+
+.app {
+  height: 100vh;
+  background-color: black;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  position: relative;
+  border-radius:  20px;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 90vh;
+  width: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+.container::-webkit-scrollbar {
+  display:none;
+}
+
+.container {
+  -ms-overflow-style:none;
+  -ms-scrollbar-width:none;
+  scrollbar-width: none;
+}
